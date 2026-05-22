@@ -222,3 +222,154 @@ section{
 .box:hover .icons{
     transform: scale(1);
 }
+
+.banner-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.banner-container .banner{
+    flex: 1 1 40rem;
+    height: 50rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.3);
+    border: 0.05rem solid gray;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner-container .banner img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.banner-container .banner:hover img{
+    transform: scale(1.2);
+}
+
+.banner-container .banner .content{
+    position: absolute;
+    top: 50%;
+    left: 4%;
+    transform: translateY(-50%);
+}
+
+.banner-container .banner .content h3{
+    color: #001B5E;
+    font-size: 2rem;
+}
+.banner-container .banner .content span{
+    font-size: 30px;
+    color: var(--p2);
+}
+
+/* ===================== */
+/*        MEDIA          */
+/* ===================== */
+
+/* Large screens (laptops) */
+@media (max-width: 1200px) {
+    html {
+        font-size: 58%;
+    }
+
+    .header {
+        padding: 2rem 5%;
+    }
+}
+
+/* Tablets */
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+
+    section {
+        padding: 7rem 2rem;
+    }
+
+    .home .home-slider .content h3 {
+        font-size: 4rem;
+    }
+
+    .home .home-slider .content span {
+        font-size: 2.5rem;
+    }
+
+    .banner-container {
+        flex-direction: column;
+    }
+}
+
+/* Small tablets / large phones */
+@media (max-width: 768px) {
+
+    #menu {
+        display: inline-block;
+    }
+
+    .header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #fff;
+        flex-direction: column;
+        display: none;
+        padding: 1rem 0;
+    }
+
+    .header .navbar a {
+        display: block;
+        margin: 1.5rem 0;
+        text-align: center;
+    }
+
+    .home .home-slider .content {
+        left: 2%;
+        max-width: 90%;
+    }
+
+    .home .home-slider .content h3 {
+        font-size: 3.5rem;
+    }
+
+    .home .home-slider .content span {
+        font-size: 2rem;
+    }
+
+    .sell .box-container {
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+
+    html {
+        font-size: 50%;
+    }
+
+    .header {
+        padding: 1.5rem 3%;
+    }
+
+    .home .home-slider .box {
+        min-height: 35rem;
+    }
+
+    .home .home-slider .content h3 {
+        font-size: 3rem;
+    }
+
+    .heading {
+        font-size: 3.5rem;
+    }
+
+    .sell .box-container {
+        grid-template-columns: 1fr;
+    }
+
+    .banner-container .banner {
+        height: 35rem;
+    }
+}
