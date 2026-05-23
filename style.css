@@ -148,7 +148,7 @@ section{
     display: flex;
     align-items: center;
     gap: 1rem;
-    animation: scroll 45s linear infinite;
+    animation: scroll 25s linear infinite;
 }
 .ins_flex img{
     max-width: 135px;
@@ -261,6 +261,8 @@ section{
     font-size: 30px;
     color: var(--p2);
 }
+
+
 
 /* ===================== */
 /*        MEDIA          */
