@@ -271,7 +271,7 @@ section{
 .insidemain{
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 .title{
     color: aliceblue;
@@ -317,6 +317,9 @@ input{
     text-align: center;
     font-size: 18px;
 }
+
+
+
 /* ===================== */
 /* MEDIA         */
 /* ===================== */
